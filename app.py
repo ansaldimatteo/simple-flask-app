@@ -24,3 +24,6 @@ def hello_there(name):
 
     content = "Hello there, " + clean_name + "! It's " + formatted_now
     return content
+
+if __name__ == "__main__":
+    app.run(debug=True)
