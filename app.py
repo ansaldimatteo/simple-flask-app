@@ -1,11 +1,13 @@
 from flask import Flask
 from flask import request
 from flask import jsonify
+from flask_cors import CORS
 import mysql.connector
 from datetime import datetime
 import re
 
 app = Flask(__name__)
+CORS(app)
 
 def getMysqlConnection():
     return mysql.connector.connect(
